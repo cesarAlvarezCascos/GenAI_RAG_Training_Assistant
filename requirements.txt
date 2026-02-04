@@ -1,0 +1,36 @@
+fastapi>=0.115,<1.0
+uvicorn[standard]>=0.30,<1.0
+
+openai>=1.40.0
+python-dotenv>=1.0.1,<2.0
+
+pypdf>=4.2.0,<5.0
+
+# Cliente Postgres (binario, evita problemas de compilación)
+psycopg
+# Adaptadores de pgvector para Python (no confundir con la extensión del servidor)
+pgvector>=0.2.5,<0.3
+
+pydantic>=2.6,<3.0
+numpy>=1.26,<3.0
+pandas
+
+
+langchain
+langchain-core
+langchain-community
+langchain-docling
+docling
+pymupdf
+chromadb
+langchain_text_splitters
+
+scikit-learn
+joblib
+spacy
+
+supabase
+
+torch
+
+sentence-transformers

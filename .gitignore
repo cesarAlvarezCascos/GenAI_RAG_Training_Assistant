@@ -1,0 +1,39 @@
+# Python / venv / caches
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.pytest_cache/
+.pytype/
+.mypy_cache/
+
+# macOS
+.DS_Store
+
+# Entorno y secretos
+.env
+.env.*        # por si usas variantes
+*.key
+*.pem
+
+# Datos locales / binarios
+pdfs/
+data/
+*.sqlite
+*.db
+
+# Logs
+logs/
+*.log
+
+# Docker
+pgdata/
+*.pid
+
+# IDE
+.vscode/
+.idea/
+
+# Notebooks (si los usas y no quieres subirlos)
+*.ipynb_checkpoints/
