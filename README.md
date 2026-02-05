@@ -88,7 +88,16 @@ API keys (if applicable)
 Database/Supabase URL and credentials  
 Any model endpoints / embedding configuration 
 
-### 4) Run the agent in your local machine
+### 4) Ingest Documentation
+
+To work, the agent needs a document corpus. The current pipeline is configured to ingest PDFs directly from the **Supabase Storage Bucket**, although the code can be adapted to ingest from a local folder or other cloud providers.  
+
+To process the documents and fill the database, run:  
+```bash
+python ingest/ingest_pdfs.py
+```
+
+### 5) Run the agent in your local machine
 
 Open two separate terminal windows.  
   
