@@ -97,6 +97,20 @@ To process the documents and fill the database, run:
 python ingest/ingest_pdfs.py
 ```
 
+### 4.1) Generate & refine Topics *(recommended)*  
+This project uses **topic-aware retrieval**. Topics are generated from the **already ingested corpus**, and you can optionally refine them manually for a better performance and comprehension of actual topics (useful when adapting the RAG to your own documents).  
+  
+#### Generate topics from your current corpus
+Run the topic generation step (NMF + spaCy) to create an initial set of clusters/topics from the ingested chunks.
+
+#### (Optional) Manually refine topics
+Export the topics table to a CSV, adjust names/descriptions/keywords as needed, and re-import them:
+```bash
+python src/export_topics.py
+# edit the exported CSV
+python src/import_topics.py
+```
+  
 ### 5) Run the agent in your local machine
 
 Open two separate terminal windows.  
